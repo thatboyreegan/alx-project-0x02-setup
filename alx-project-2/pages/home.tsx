@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Card from '@/components/layout/common/Card';
 import PostModal from '@/components/layout/common/PostModal';
+import Header from '@/components/layout/Header';
 
 const home = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -13,6 +13,7 @@ const home = () => {
         <div className=''>
             <h1>Home</h1>
             <button onClick={() => setIsModalOpen(true)}>Add New Post</button>
+            <Header/>
       
       <PostModal
         isOpen={isModalOpen}

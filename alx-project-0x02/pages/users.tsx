@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import UserCard from '@/components/layout/common/UserCard';
+import UserCard from '@/components/common/UserCard';
 import { User } from '@/interfaces';
 
 

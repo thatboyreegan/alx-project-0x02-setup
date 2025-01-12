@@ -1,4 +1,4 @@
-import Button from '@/components/layout/common/Button';
+import Button from '@/components/common/Button';
 import React from 'react';
 import Header from '@/components/layout/Header';
 

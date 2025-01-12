@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '@/components/layout/Header';
 import { Post } from '@/interfaces';
-import PostCard from '@/components/layout/common/PostCard';
+import PostCard from '@/components/common/PostCard';
 
 const posts = () => {
     const [posts, setPosts] = useState<Post[]>([]);

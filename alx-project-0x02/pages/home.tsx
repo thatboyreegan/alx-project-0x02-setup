@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import PostModal from '@/components/layout/common/PostModal';
+import PostModal from '@/components/common/PostModal';
 import Header from '@/components/layout/Header';
+import Card from '@/components/common/Card';
 
 const home = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,10 +26,7 @@ const home = () => {
           <p>No posts yet. Add a new post!</p>
         ) : (
           posts.map((post, index) => (
-            <div key={index} className="post">
-              <h3>{post.title}</h3>
-              <p>{post.content}</p>
-            </div>
+            <Card title={post.title} content={post.content} key={index}/>
           ))
         )}
       </div>
